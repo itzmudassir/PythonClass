@@ -163,6 +163,7 @@ def main():
         print("\nInvalid choice. Please restart the program and select a valid education level.")
 
     say_goodbye(name)
+    input("Press Enter to exit...")
 
 if __name__ == "__main__":
     main()

@@ -4,7 +4,7 @@ url = 'http://api.exchangeratesapi.io/v1/latest?access_key=cff0b34d0f7f6319ca3a1
 response = requests.get(url)
 currency_data = response.json()
 
-# print(currency_data['rates'])
+print(currency_data['rates'])
 
 def currencyConverter(from_currency, to_currency, amount):
     if from_currency != 'EUR':

@@ -33,17 +33,25 @@ root.title("Login Form")
 heading = tk.Label(root, text="Login Form", font=("Arial", 20))
 heading.pack(pady=10)
 
-# Username
-label_username = tk.Label(root, text="Username:")
-label_username.pack(pady=5)
-entry_username = tk.Entry(root)
-entry_username.pack(pady=5)
+# Frame for username
+frame_username = tk.Frame(root)
+frame_username.pack(pady=5)
 
-# Password
-label_password = tk.Label(root, text="Password:")
-label_password.pack(pady=5)
-entry_password = tk.Entry(root, show="*")
-entry_password.pack(pady=5)
+label_username = tk.Label(frame_username, text="Username:")
+label_username.pack(side='left', padx=5)
+
+entry_username = tk.Entry(frame_username)
+entry_username.pack(side='left', padx=5)
+
+# Frame for password
+frame_password = tk.Frame(root)
+frame_password.pack(pady=5)
+
+label_password = tk.Label(frame_password, text="Password:")
+label_password.pack(side='left', padx=5)
+
+entry_password = tk.Entry(frame_password, show="*")
+entry_password.pack(side='left', padx=5)
 
 # Language checkboxes
 var_english = tk.BooleanVar()
